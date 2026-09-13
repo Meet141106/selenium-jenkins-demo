@@ -1,13 +1,12 @@
 package com.example;
 
 import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SeleniumTest {
 
@@ -31,7 +30,7 @@ public class SeleniumTest {
         System.out.println("Page title = " + title);
 
         assertTrue(
-            title.contains("DevOps"),
+            title.contains("Selenium"),
             "Page title should contain 'Selenium'"
         );
     }
