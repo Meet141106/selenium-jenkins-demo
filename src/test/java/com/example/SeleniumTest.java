@@ -31,7 +31,7 @@ public class SeleniumTest {
         System.out.println("Page title = " + title);
 
         assertTrue(
-            title.contains("Selenium"),
+            title.contains("DevOps"),
             "Page title should contain 'Selenium'"
         );
     }
